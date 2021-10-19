@@ -1,0 +1,12 @@
+// #########################################################
+//            COPY BOOTSTRAP VARIABLES YOU NEED TO OVERIDE INTO THIS FILE            
+//              WE HAVE TWO OVERIDE FOR THE PRIMARY & SECONDARY COLORS
+// #########################################################
+              
+$my-primary: rgb(113, 204, 53); //change the value of this color and save then look at the theming-kit.html (ideally on a web development server)
+$my-secondary: rgb(49, 90, 21); //change the value of this color and save then look at the theming-kit.html (ideally on a web development server)
+
+$primary:       $my-primary; 
+$secondary:    $my-secondary; 
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,50 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+  @include gradient;
+
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white;
+      padding: 0 0.7rem;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+// styling the navbar-brand
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#companyLogo {
+  width: clamp(70px, 72px, 74px);
+  height: auto;
+}
+
+#logoMark {
+  font-weight: bold;
+  font-size: clamp(1em, 1.2em, 1.4em);
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+// styling the navbar links
+.navbar-nav > .nav-item > .nav-link {
+  color: lighten($primary, 50%);
+
+  &:hover {
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
